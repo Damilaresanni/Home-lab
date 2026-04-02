@@ -1,7 +1,7 @@
 # Homelab  
 
-A personal AI/ML infrastructure cluster  built for learning and 
-experimentation for API Model serving, MlOps, LLM serving, Machine Learning and Data Engineering. 
+A personal AI/ML infrastructure cluster on a budget built for learning and 
+experimentation of API Model serving, MlOps, LLM serving, Machine Learning and Data Engineering. 
 The Homelab is Currently at a single node, expansion will take place with time.
 
 
@@ -19,7 +19,8 @@ The Homelab is Currently at a single node, expansion will take place with time.
 | worker-01  | M720q  | k3s worker              |
 | worker-02  | M720q  | k3s worker              |
 | worker-03  | M920q  | k3s worker + compute    |
-| compute-01 | M920sff  | GPU compute + NAS       |
+| compute-01 | M920q  | GPU compute             |
+| compute-02 |P3 Ultra| GPU compute + NAS
 
 
 ## current Stack
@@ -41,3 +42,4 @@ The Homelab is Currently at a single node, expansion will take place with time.
 
 
 ## Progress
+- 
