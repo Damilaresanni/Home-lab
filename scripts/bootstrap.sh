@@ -9,19 +9,22 @@ echo "==> [2/6] Installing base tools..."
 sudo apt install -y \
     curl git vim htop tmux \
     
+echo "==> [3/6] Installing zsh..."
+sudo apt install zsh
 
-echo "==> [3/6] configuring firewall..."
+echo "==> [4/6] configuring firewall..."
 sudo ufw allow 6443/tcp 
 sudo ufw allow from 10.42.0.0/16 to any 
 sudo ufw allow from 10.43.0.0/16 to any 
 
 
 
-echo "==> [4/6] installing Docker..."
+echo "==> [5/6] installing Docker..."
 curl -fsSL https://get.docker.com | sh 
 sudo usermod -aG docker $usermod
 
-echo "==> [5/6] Installing Tailscale..."
+
+echo "==> [6/6] Installing Tailscale..."
 curl -fsSL https:://tailscale.com/install.sh | sh
 echo " --> Run 'sudo tailscale up' to authenticate tailscale on your telnet network"
 
