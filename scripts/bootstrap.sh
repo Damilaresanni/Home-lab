@@ -10,6 +10,7 @@ sudo apt install -y \
     curl git vim htop tmux \
     
 echo "==> [3/6] Installing ohmyzsh..."
+sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "==> [4/6] configuring firewall..."
