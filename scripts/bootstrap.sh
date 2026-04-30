@@ -9,8 +9,8 @@ echo "==> [2/6] Installing base tools..."
 sudo apt install -y \
     curl git vim htop tmux \
     
-echo "==> [3/6] Installing zsh..."
-sudo apt install zsh
+echo "==> [3/6] Installing ohmyzsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "==> [4/6] configuring firewall..."
 sudo ufw allow 6443/tcp 
